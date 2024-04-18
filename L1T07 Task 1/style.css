@@ -1,0 +1,165 @@
+/* create variables for font-size */
+
+:root {
+  --font-size-heading-lg: 3.25rem;
+  --font-size-text-lg: 1.25rem;
+  --font-size-heading-sm: 2rem;
+  --font-size-text-sm: 0.75rem;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+/* style body */
+body {
+  font-family: 'Gloria Hallelujah', cursive;
+  background: #ffe000;
+  background: -webkit-linear-gradient(to right, #799f0c, #ffe000);
+  background: linear-gradient(to right, #799f0c, #ffe000);
+  font-size: var(--font-size-text-lg);
+}
+
+/* header div style */
+.header-container {
+  font-family: 'Paytone One', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: fit-content;
+  /* padding: 1vw 2vw; */
+  line-height: 1.5;
+  color: black;
+  align-content: center;
+}
+
+/* header div elements style */
+h1 {
+  font-size: var(--font-size-heading-lg);
+  margin: 0;
+}
+
+a {
+  color: whitesmoke;
+}
+
+.paragraph-container {
+  font-family: 'Gloria Hallelujah', cursive;
+  max-width: 50%;
+  margin: auto;
+}
+
+#dinner-party {
+  height: 200px;
+  width: 200px;
+}
+
+/* style about section */
+.about {
+  min-height: 50vh;
+  width: fit-content;
+  padding: 1em;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+/* set and style grid elements */
+.how-to-use {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  text-align: center;
+  margin: auto;
+  width: fit-content;
+  gap: 2em;
+  list-style-type: none;
+  padding: 2rem;
+}
+
+.flex-item {
+  border: 3px solid whitesmoke;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: whitesmoke;
+}
+
+/* style guest list input section */
+#guest-list {
+  padding: 0.5em;
+  text-align: center;
+  min-height: 90vh;
+}
+
+#guest-list p {
+  font-size: var(--font-size-text-lg);
+}
+
+.list-info {
+  margin: 0 auto;
+  width: 50%;
+  color: whitesmoke;
+}
+
+.list-info h2 {
+  color: black;
+}
+
+#list-icon {
+  height: 10%;
+  width: 10%;
+}
+
+#guest-names {
+  color: black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: 2pt solid rgb(42, 142, 42);
+}
+
+#add-guest {
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgb(85, 167, 254);
+  color: white;
+  cursor: pointer;
+  border: 2pt solid rgb(37, 139, 249);
+}
+
+/* change add guest button on hover */
+#add-guest:hover {
+  border: 2pt solid white;
+  background-color: rgb(74, 133, 196);
+}
+
+#final-list {
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  margin: auto;
+}
+
+/* media query for smaller screens to enable responsiveness */
+@media (max-width: 630px) {
+  #dinner-party {
+    height: auto;
+    max-width: 100%;
+  }
+
+  body {
+    font-size: var(--font-size-text-sm);
+  }
+
+  h1 {
+    font-size: var(--font-size-heading-sm);
+  }
+
+  #guest-list p {
+    font-size: var(--font-size-text-sm);
+  }
+
+  .how-to-use {
+    display: grid;
+    grid-template-columns: 1fr;   /* stack grid items on smaller display*/
+  }
+}

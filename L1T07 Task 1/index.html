@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinner Party Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gloria+Hallelujah&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Gloria+Hallelujah&family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <!-- create welcome section -->
+    <div class="header-container">
+      <h1>Dinner Party Planner</h1>
+      <div class="paragraph-container">
+        <p>Welcome to our dinner guest planning website!</p>
+        <p>
+          Are you gearing up for an unforgettable evening filled with laughter,
+          delectable dishes, and cherished conversations? Look no further!
+        </p>
+        <p>
+          Whether you're hosting an intimate gathering or a lavish dinner party,
+          our platform simplifies the process of organizing your guest list.
+          With our user-friendly interface, you can effortlessly add the names
+          of your esteemed guests, ensuring everyone feels welcomed and
+          accounted for.
+        </p>
+        <p>
+          <a href="#about">
+            Click here to find out how we can help you orchestrate the perfect
+            dining experience for you and your guests.
+          </a>
+        </p>
+        <img
+          id="dinner-party"
+          src="./images/Iftar dinner-amico.png"
+          alt="dinner table"
+        />
+      </div>
+    </div>
+
+    <!-- about section explaining the functionlity of the website -->
+
+    <div class="about" id="about">
+      <h2 class="info-section">How Do I Use The Website?</h2>
+      <ol class="how-to-use">
+        <div class="flex-item">
+          <li>
+            1. In the designated input field, enter the names of your dinner
+            guests one by one. You can either type them directly into the field
+            or copy and paste from another source.
+          </li>
+        </div>
+        <div class="flex-item">
+          <li>
+            2. After entering each guest's name, you can click on the "Add
+            Guest" button to add them to the list. Repeat this process for each
+            guest you want to invite.
+          </li>
+        </div>
+        <div class="flex-item">
+          <li>
+            3. Take a moment to review your guest list. If you need to make any
+            changes, such as adding or removing someone from the list, you can
+            do so at this stage.
+          </li>
+        </div>
+        <div class="flex-item">
+          <li>
+            4. After saving or finalizing your guest list, you may receive a
+            confirmation message indicating that your changes have been
+            successfully processed.
+          </li>
+        </div>
+      </ol>
+    </div>
+
+    <!-- create div for guest list -->
+
+    <div id="guest-list">
+      <div class="list-info">
+        <h2>Create Your Guest List</h2>
+        <img id="list-icon" src="./images/customer.png" alt="guest list icon" />
+        <p>
+          Note: the maximum number of guests you can add is 10. Should You wish
+          to replace a guest, you can enter an 11th name and click add. You will
+          then be prompted to choose a guest to replace, and your guest list
+          will be updated. We wouldn't want the table to be too crowded!
+        </p>
+      </div>
+
+      <!-- create section for users to input guests names -->
+      <div class="guest-name-entry">
+        <h3>Enter Guest Names Below</h3>
+        <!-- input field for guest name -->
+        <input
+          id="guest-names"
+          type="text"
+          placeholder="e.g John Smith"
+          autocomplete="off"
+        />
+        <!-- button to add guest -->
+        <button id="add-guest">Add Guest</button>
+      </div>
+
+      <!-- section for results display -->
+      <div id="final-list">
+        <p></p>
+      </div>
+    </div>
+
+    <script src="./guestList.js"></script>
+  </body>
+</html>
